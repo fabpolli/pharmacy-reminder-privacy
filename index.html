@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pharmacy Reminder – Norme sulla privacy</title>
-<meta name="description" content="Norme sulla privacy dell'app Android Pharmacy Reminder.">
+<title>Pharmacy Reminder – Norme sulla privacy / Privacy Policy</title>
+<meta name="description" content="Norme sulla privacy dell'app Android Pharmacy Reminder. Privacy policy of the Pharmacy Reminder Android app.">
 <style>
   :root { color-scheme: light dark; --bg: #fff; --fg: #1f2933; --muted: #52606d; --line: #d9e2ec; --head: #f0f4f8; --accent: #00696b; }
   @media (prefers-color-scheme: dark) {
@@ -24,10 +24,15 @@
   table { width: 100%; border-collapse: collapse; font-size: 0.94rem; }
   th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
   th { background: var(--head); }
+  nav { margin: 0 0 24px; font-size: 0.95rem; }
+  #en { margin-top: 56px; padding-top: 32px; border-top: 2px solid var(--line); }
 </style>
 </head>
 <body>
 <main>
+  <nav><a href="#it" lang="it">Italiano</a> · <a href="#en" lang="en">English</a></nav>
+
+  <section id="it" lang="it">
   <h1>Pharmacy Reminder – Norme sulla privacy</h1>
   <p class="updated">Ultimo aggiornamento: 9 novembre 2026</p>
 
@@ -97,6 +102,79 @@
 
   <h2>Modifiche e contatti</h2>
   <p>Se queste norme cambiano, la nuova versione viene pubblicata a questo stesso indirizzo con una nuova data di aggiornamento. Una modifica al trattamento dei dati, come l'aggiunta di funzioni online, viene descritta qui prima di entrare in vigore.</p>
+  </section>
+
+  <section id="en" lang="en">
+  <h1>Pharmacy Reminder – Privacy Policy</h1>
+  <p class="updated">Last updated: 9 November 2026</p>
+
+  <p><strong>Pharmacy Reminder stores your data only on your device: the developer does not receive or collect it.</strong> The app has no Internet access and contains no advertising or analytics tools.</p>
+  <p>This policy applies to the Pharmacy Reminder Android app (<code>it.sharksoft.PharmacyReminder</code>). The person responsible for the app is fabpolli, who can be contacted at <a href="mailto:fabpolli@gmail.com">fabpolli@gmail.com</a>.</p>
+
+  <h2>Data you enter in the app</h2>
+  <p>The app only handles the data you enter, including health-related data about you or the people you care for. If you enter other people's data, make sure you are allowed to do so.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>People</td><td>Name and notes</td><td>Linking medicines and plans to each person</td></tr>
+        <tr><td>Medicines</td><td>Name, description, quantity per package</td><td>Building the list of medicines</td></tr>
+        <tr><td>Therapy plans</td><td>Days, times, doses, start date, notes</td><td>Showing the daily plan and calculating consumption</td></tr>
+        <tr><td>Packages</td><td>Purchase and expiry dates, remaining quantity</td><td>Alerting you to expiry dates and low stock</td></tr>
+        <tr><td>Consumption log</td><td>Date, time and quantity</td><td>Updating stock levels</td></tr>
+        <tr><td>Settings</td><td>Alert time and type of app lock</td><td>Applying the preferences you choose</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The app does not create accounts and does not ask for your email address, location, contacts or photos.</p>
+
+  <h2>Where data is stored and how it is protected</h2>
+  <p>Data stays in your device's storage, in a database encrypted with AES-256. The key is protected by the device's Android Keystore.</p>
+  <ul>
+    <li><strong>Backup:</strong> the app excludes its data from cloud backup and from direct device-to-device transfer.</li>
+    <li><strong>Optional lock:</strong> you can protect the app with a PIN or with your phone unlock. Fingerprint and face recognition are handled by Android and the app has no access to them.</li>
+    <li><strong>Screen:</strong> when the lock is on, the app asks Android to block screenshots and to hide its content in the recent apps view.</li>
+    <li><strong>Notifications:</strong> alerts include the names of people and medicines. They are marked as private, but what appears on the lock screen also depends on your device settings.</li>
+  </ul>
+
+  <h2>Sharing and export</h2>
+  <p>The app does not send data to the developer or to third parties: data leaves your device only if you export it. You can save or share a file containing all your data or only the data of the people you select.</p>
+  <p>A password for the file is optional. With a password, the file is encrypted with AES-256; without one, anyone who receives it can read its contents, including health data.</p>
+  <p>When you choose a destination app or service, such as email or cloud storage, the file is subject to that service's privacy policy. You can also import files received from other people: their contents are added to the app or replace the existing data, depending on the option you choose.</p>
+
+  <h2>Android permissions</h2>
+  <p>The only permission the app asks you to grant is for notifications. The others are enabled automatically by Android, and none of them lets the app access the Internet.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why it is needed</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Notifications (<code>POST_NOTIFICATIONS</code>)</td><td>Sending alerts about expiry dates and stock; you can refuse it</td></tr>
+        <tr><td>Biometrics and fingerprint (<code>USE_BIOMETRIC</code>, <code>USE_FINGERPRINT</code>)</td><td>Unlocking the app, if you choose phone unlock</td></tr>
+        <tr><td>Device startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Restoring the periodic check after a restart</td></tr>
+        <tr><td>Background activity (<code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code>)</td><td>Completing the daily check through Android's WorkManager system</td></tr>
+        <tr><td>Network state (<code>ACCESS_NETWORK_STATE</code>)</td><td>Required by the WorkManager library; it does not allow data to be sent</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Retention and deletion</h2>
+  <p>Data stays on your device until you delete it in the app or uninstall the app. You can also clear it from the app's section in Android Settings.</p>
+  <p>Uninstalling deletes the data from your device and the developer cannot recover it. Because the app excludes its data from backup, keep an exported file if you want to restore it. Exported files are not deleted with the app: you must delete them yourself wherever you saved or shared them.</p>
+
+  <h2>Your rights</h2>
+  <p>You have full control of your data: you can view, correct, export and delete it directly in the app. Because the developer does not receive your data, the developer cannot view, correct or delete it on your behalf.</p>
+  <p>If you believe your data protection rights are not being respected, you can contact the Italian Data Protection Authority (Garante per la protezione dei dati personali) or the competent authority in your country.</p>
+
+  <h2>Children</h2>
+  <p>The app is not specifically intended for children and does not collect data from them. An adult may enter the data of a child in their care, under their own responsibility.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the new version is published at this same address with a new update date. Any change in how data is handled, such as adding online features, is described here before it takes effect.</p>
+  </section>
 </main>
 </body>
 </html>
