@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pharmacy Reminder – Norme sulla privacy</title>
+<meta name="description" content="Norme sulla privacy dell'app Android Pharmacy Reminder.">
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --fg: #1f2933; --muted: #52606d; --line: #d9e2ec; --head: #f0f4f8; --accent: #00696b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121619; --fg: #e4e7eb; --muted: #9aa5b1; --line: #3e4c59; --head: #1f2933; --accent: #6fd6d8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 8px; color: var(--accent); }
+  .updated { color: var(--muted); margin: 0 0 24px; }
+  p, ul { margin: 0 0 14px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  code { font: 0.86em ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
+  .table-wrap { overflow-x: auto; margin: 0 0 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.94rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--head); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pharmacy Reminder – Norme sulla privacy</h1>
+  <p class="updated">Ultimo aggiornamento: 9 novembre 2026</p>
+
+  <p><strong>Pharmacy Reminder conserva i tuoi dati solo sul tuo dispositivo: lo sviluppatore non li riceve e non li raccoglie.</strong> L'app non ha accesso a Internet e non contiene pubblicità né strumenti di analisi.</p>
+  <p>Queste norme si applicano all'app Android Pharmacy Reminder (<code>it.sharksoft.PharmacyReminder</code>). Il responsabile dell'app è fabpolli, contattabile all'indirizzo <a href="mailto:fabpolli@gmail.com">fabpolli@gmail.com</a>.</p>
+
+  <h2>Dati che inserisci nell'app</h2>
+  <p>L'app tratta solo i dati che inserisci tu, compresi dati relativi alla salute, tua o delle persone che assisti. Se inserisci dati di altre persone, assicurati di poterlo fare.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Categoria</th><th>Esempi</th><th>A cosa serve</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Persone</td><td>Nome e note</td><td>Associare farmaci e piani a ciascuna persona</td></tr>
+        <tr><td>Farmaci</td><td>Nome, descrizione, quantità per confezione</td><td>Costruire l'elenco dei farmaci</td></tr>
+        <tr><td>Piani terapeutici</td><td>Giorni, orari, dosi, data di inizio, note</td><td>Mostrare il piano del giorno e calcolare i consumi</td></tr>
+        <tr><td>Confezioni</td><td>Date di acquisto e scadenza, quantità residua</td><td>Avvisarti di scadenze e scorte in esaurimento</td></tr>
+        <tr><td>Registro dei consumi</td><td>Data, ora e quantità</td><td>Aggiornare le scorte</td></tr>
+        <tr><td>Impostazioni</td><td>Orario degli avvisi e tipo di blocco dell'app</td><td>Far funzionare le preferenze che scegli</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>L'app non crea account e non richiede email, posizione, contatti o foto.</p>
+
+  <h2>Dove sono conservati e come sono protetti</h2>
+  <p>I dati restano nella memoria del dispositivo, in un database cifrato con AES-256. La chiave è protetta dall'Android Keystore del dispositivo.</p>
+  <ul>
+    <li><strong>Backup:</strong> l'app esclude i propri dati dal backup cloud e dal trasferimento diretto tra dispositivi.</li>
+    <li><strong>Blocco facoltativo:</strong> puoi proteggere l'app con un PIN o con lo sblocco del telefono. L'impronta o il volto sono gestiti da Android e l'app non vi accede.</li>
+    <li><strong>Schermo:</strong> con il blocco attivo, l'app chiede ad Android di impedire gli screenshot e di nascondere il proprio contenuto tra le app recenti.</li>
+    <li><strong>Notifiche:</strong> gli avvisi riportano nomi di persone e farmaci. Sono impostati come privati, ma ciò che appare sulla schermata di blocco dipende anche dalle impostazioni del tuo dispositivo.</li>
+  </ul>
+
+  <h2>Condivisione ed esportazione</h2>
+  <p>L'app non invia dati allo sviluppatore o a terzi: i dati escono dal dispositivo solo se li esporti tu. Puoi salvare o condividere un file con tutti i dati o con quelli delle persone che selezioni.</p>
+  <p>La password del file è facoltativa. Con la password il file è cifrato con AES-256; senza password chiunque lo riceva può leggerne il contenuto, compresi i dati sulla salute.</p>
+  <p>Quando scegli un'app o un servizio di destinazione, come email o archiviazione cloud, il file è soggetto alle norme sulla privacy di quel servizio. Puoi anche importare file ricevuti da altre persone: il loro contenuto viene aggiunto all'app o sostituisce i dati presenti, secondo la scelta che fai.</p>
+
+  <h2>Permessi Android</h2>
+  <p>L'unico permesso che l'app ti chiede di concedere riguarda le notifiche. Gli altri vengono attivati automaticamente da Android e nessuno consente all'app di accedere a Internet.</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Permesso</th><th>Perché serve</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Notifiche (<code>POST_NOTIFICATIONS</code>)</td><td>Inviare gli avvisi su scadenze e scorte; puoi negarlo</td></tr>
+        <tr><td>Biometria e impronta (<code>USE_BIOMETRIC</code>, <code>USE_FINGERPRINT</code>)</td><td>Sbloccare l'app, se scegli lo sblocco del telefono</td></tr>
+        <tr><td>Avvio del dispositivo (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Ripristinare il controllo periodico dopo il riavvio</td></tr>
+        <tr><td>Attività in background (<code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code>)</td><td>Completare il controllo giornaliero tramite il sistema WorkManager di Android</td></tr>
+        <tr><td>Stato della rete (<code>ACCESS_NETWORK_STATE</code>)</td><td>Richiesto dalla libreria WorkManager; non consente di inviare dati</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Conservazione e cancellazione</h2>
+  <p>I dati restano sul dispositivo finché non li elimini tu dall'app o non disinstalli l'app. Puoi anche cancellarli da Impostazioni Android, nella sezione dedicata all'app.</p>
+  <p>La disinstallazione elimina i dati dal dispositivo e lo sviluppatore non può recuperarli. Poiché l'app esclude i dati dal backup, conserva un file esportato se vuoi ripristinarli. I file esportati non vengono eliminati con l'app: devi cancellarli tu dove li hai salvati o condivisi.</p>
+
+  <h2>I tuoi diritti</h2>
+  <p>Hai il pieno controllo dei tuoi dati: puoi consultarli, correggerli, esportarli ed eliminarli direttamente dall'app. Poiché lo sviluppatore non li riceve, non può consultarli, correggerli o cancellarli per tuo conto.</p>
+  <p>Se ritieni che i tuoi diritti sulla protezione dei dati non siano rispettati, puoi rivolgerti al Garante per la protezione dei dati personali o all'autorità competente del tuo Paese.</p>
+
+  <h2>Minori</h2>
+  <p>L'app non è pensata specificamente per i minori e non raccoglie dati da loro. Un adulto può inserire i dati di un minore che assiste, sotto la propria responsabilità.</p>
+
+  <h2>Modifiche e contatti</h2>
+  <p>Se queste norme cambiano, la nuova versione viene pubblicata a questo stesso indirizzo con una nuova data di aggiornamento. Una modifica al trattamento dei dati, come l'aggiunta di funzioni online, viene descritta qui prima di entrare in vigore.</p>
+</main>
+</body>
+</html>
